@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+    padding: 1px;
+}
+
+/* LOGO Y MENU */
+
+.header {
+    background-color: #383e42;
+}
+
+a.navbar-brand,
+a.nav-link {
+    color: white;
+    --bs-nav-link-hover-color: white;
+}
+
+a.navbar-brand:hover {
+    color: white;
+}
+
+a.nav-link3 {
+    color: #668497;
+    text-decoration: none;
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+}
+
+a.nav-link2 {
+    color: green !important;
+    text-decoration: none;
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+}
+
+/* CAROUSEL  */
+
+.carousel-item.active img {
+    filter: brightness(0.5);
+}
+
+.carousel-caption.d-none.d-md-block {
+    text-align: end;
+    width: 40%;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    color: #fff;
+}
+
+button.btn.btn-outline-secondary {
+    --bs-btn-color: white;
+    --bs-btn-border-color: white;
+}
+
+/* ORADORES  */
+
+.oradores h6,
+.oradores h3 {
+    text-align: center;
+}
+
+.oradores h6 {
+    padding-top: 5px;
+    font-size: 0.75rem;
+}
+
+.oradores button {
+    --bs-btn-font-weight: 700;
+}
+
+.oradores .card {
+    width: 87%;
+}
+
+button.btn.btn-info {
+    color: white;
+}
+
+p.card-text {
+    font-size: small;
+}
+
+/* TIEMPO  */
+
+div.text-left {
+    margin: 0;
+    padding-top: 25px;
+
+}
+
+div.col {
+    padding: 0;
+}
+
+.tiempo div.row.align-items-start {
+    margin-right: 0;
+}
+
+img.card {
+    --bs-card-border-radius: 0;
+}
+
+.col-card-text {
+    color: white;
+    background-color: #353a40;
+    padding: 10px;
+}
+
+/* FORM  */
+
+.form h6,
+.form h3,
+.form h5 {
+    text-align: center;
+}
+
+.formulario {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 15%;
+}
+
+.formulario .col-12 {
+    padding-top: 5px;
+    text-align: left;
+    font-size: small;
+    color: #717e8b;
+}
+
+.formulario .btn.btn-success {
+    background-color: #96c93e;
+    border: #96c93e;
+}
+
+/* FOOTER  */
+
+
+.footer {
+    margin-top: 10px;
+    background: linear-gradient(45deg, #1c3846, #1e5170);
+    text-align: center;
+}
+
+footer .container-fluid {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.footer .nav-link {
+    display: table-caption;
+    padding: 10px 40px;
+}
+
+.footer ul {
+    align-items: center;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 425px) {
+
+    /* LOGO Y MENU */
+
+    .header ul.nav.justify-content-end {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 50px;
+    }
+
+    /* CAROUSEL */
+    div.carousel-indicators {
+        display: none;
+    }
+
+    .carousel button {
+        font-size: small;
+        padding: 5px;
+    }
+
+    .carousel-caption.d-none.d-md-block {
+        display: contents !important;
+        color: black;
+        text-align: center;
+    }
+
+    button.btn.btn-outline-secondary {
+        --bs-btn-color: black;
+        --bs-btn-border-color: black;
+        margin-left: 50px;
+    }
+
+    /* ORADORES  */
+
+    .oradores {
+        padding-top: 10px;
+    }
+
+    .oradores div.row.align-items-start {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .oradores .card {
+        margin-left: 2px;
+    }
+
+    /* TIEMPO  */
+
+    .tiempo div.row.align-items-start {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    /* FOOTER  */
+
+    .footer ul.nav.justify-content-center {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    .header div.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .header ul.nav.justify-content-end {
+        font-size: small;
+    }
+
+    .tiempo div.row.align-items-start {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .footer .nav-link {
+        display: table-caption;
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .header div.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer .nav-link {
+        display: table-caption;
+        padding: 10px 15px;
+    }
+
+}
