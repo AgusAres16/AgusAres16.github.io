@@ -173,6 +173,44 @@ footer .container-fluid {
     align-items: center;
 }
 
+/* COMPRA */
+
+/* COMPRADORES */
+.compradores .card-group {
+    padding-top: 20px;
+    padding-left: 25%;
+    width: 85%;
+    text-align: center;
+}
+
+.compradores .col {
+    margin-right: 5px ;
+}
+
+.compradores h5.card-title, .compradores h6.card-subtitle.mb-2.text-body-secondary{
+line-height: 2;
+}
+
+.compradores .card {
+    --bs-card-border-radius:0;
+}
+
+/* FORM VENTA */
+
+.text-form-venta {
+    padding-top: 20px; 
+}
+
+.formulario p {
+  background-color: #cce5ff;
+  border: #cce5ff;
+  width: 98%;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  color: #284150;
+  text-align: initial;
+}
+
 /* Media query */
 
 @media only screen and (max-width: 425px) {
